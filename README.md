@@ -30,7 +30,7 @@ Edit postgresql.conf to allow remote connections by changing listen_addresses to
 
 ```
 
-    sudo vim /etc/postgresql/16/main/postgresql.conf
+    sudo vi /etc/postgresql/16/main/postgresql.conf
 
 ```
 in your vim editor you can use this command to locate listen easily
@@ -47,6 +47,27 @@ after locating listen you can hit letter i to enter in insert mode and change
 
 ```
 
+### step 4: enabling pg admin connection
+this step is optional but very crucial in case you would like to connect you postgres db to pg admin which enables you to interact with your db using GUI
+
+```
+   sudo vi /etc/postgresql/16/main/pg_hba.conf
+
+```
+
+move all the way down and insert 
+
+```
+    host    all             all             0.0.0.0/0               md5
+
+```
+
+then after this you can restart your postgres services by running
+
+```
+   sudo systemctl restart postgresql
+
+```   
 
 
 
