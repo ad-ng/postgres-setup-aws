@@ -62,6 +62,12 @@ move all the way down and insert
 
 ```
 
+Allow PostgreSQL port through the firewall:
+
+```
+   sudo ufw allow 5432/tcp
+```
+
 then after this you can restart your postgres services by running
 
 ```
