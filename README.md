@@ -77,5 +77,38 @@ when you install a postgres database it automatically creates the postgres user,
 
 ```   
 
+# step 6: change the password for your database
+in the previous step we changed password for user called postgres "a user in ubuntu os"
+
+but here we going to change password for a user called postgres inside our database 
+postgres is default user but you can change it of you want
+
+we first have to switch to that user
+
+```
+
+   su - postgres
+
+```
+
+then run
+
+```
+
+   sudo -u postgres psql
+
+```
+
+to change password 
+
+```
+
+   ALTER USER postgres PASSWORD 'passwordYouWant';
+
+```
+
+
+# NOW you have a your db set you can access it any you want as long as your security group is accepting traffic from that source
+
 
 
