@@ -69,5 +69,13 @@ then after this you can restart your postgres services by running
 
 ```   
 
+### step 5: change password for postgres user
+when you install a postgres database it automatically creates the postgres user, who is the one to manage it by default so to be able to switch to that user you need a password
+
+``` 
+   sudo passwd postgres
+
+```   
+
 
 
