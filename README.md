@@ -23,7 +23,29 @@ and you have to make sure that postgresql service has started successfully by ru
     sudo systemctl start postgresql
     sudo systemctl enable postgresql
 
-```    
+```   
+
+### step 3: Configure PostgreSQL 16
+Edit postgresql.conf to allow remote connections by changing listen_addresses to *:
+
+```
+
+    sudo vim /etc/postgresql/16/main/postgresql.conf
+
+```
+in your vim editor you can use this command to locate listen easily
+
+```
+   /listen
+
+```   
+
+after locating listen you can hit letter i to enter in insert mode and change 
+
+```
+    listen_addresses = '*'
+
+```
 
 
 
