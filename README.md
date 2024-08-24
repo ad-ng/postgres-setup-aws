@@ -107,8 +107,16 @@ to change password
 
 ```
 
+then exit 
 
-# NOW you have a your db set you can access it any you want as long as your security group is accepting traffic from that source
+```
+
+   \q
+
+```
+
+
+# NOW you have a your db set you can access it any where you want as long as your security group is accepting traffic from that source
 
 
 
